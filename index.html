@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Infoserv Hosting Components</title>
+  </head>
+  <body>
+    <button id="open" class="btn btn-primary btn-large">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+        <path fill="none" d="M0 0h24v24H0z" />
+        <path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z" />
+      </svg>
+      New Domain
+    </button>
+    <button value="opret" class="btn btn-primary-inverse">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+        <path fill="none" d="M0 0h24v24H0z" />
+        <path d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm1 2v14h14V5H5zm6 6V7h2v4h4v2h-4v4h-2v-4H7v-2h4z" />
+      </svg>
+      Opret record
+    </button>
+    <button value="fortryd" class="btn btn-secondary-inverse">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+        <path fill="none" d="M0 0h24v24H0z" />
+        <path d="M8 7v4L2 6l6-5v4h5a8 8 0 1 1 0 16H4v-2h9a6 6 0 1 0 0-12H8z" />
+      </svg>
+      Fortryd
+    </button>
+    <label for="type">Type: </label>
+    <input type="text" />
+    <label for="type">Type: </label>
+    <input readonly type="text" placeholder="readonly" />
+    <div class="row">
+      <label for="type">Type: </label>
+      <div class="special-input">
+        <input type="text" />
+        <input readonly type="text" placeholder="readonly" />
+      </div>
+    </div>
+
+    <dialog class="modal">
+      <div class="modal-head">
+        <h4>Opret ny record</h4>
+        <span id="close">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z" />
+          </svg>
+        </span>
+      </div>
+      <div class="modal-body">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat temporibus vitae minus animi excepturi pariatur?</p>
+        <form method="dialog">
+          <div class="row">
+            <label for="type">Type: </label>
+            <select name="" id="">
+              <option value="mx">MX</option>
+              <option value="a">A</option>
+              <option value="cname">CNAME</option>
+              <option value="txt">TXT</option>
+            </select>
+          </div>
+          <div class="row">
+            <label for="type">Hostnavn: </label>
+            <div class="special-input">
+              <input type="text" />
+              <input readonly type="text" placeholder="1x.dk" />
+            </div>
+          </div>
+          <div class="row">
+            <label for="type">TTL: </label>
+            <input type="text" name="type" id="" />
+          </div>
+          <div class="row">
+            <label for="type">Prioritet: </label>
+            <input readonly type="text" name="type" id="" />
+          </div>
+          <div class="row">
+            <input type="checkbox" name="overvågning" id="" />
+            <label for="overvågning">Overvågning</label>
+          </div>
+          <div class="row">
+            <button value="opret" class="btn btn-primary-inverse">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm1 2v14h14V5H5zm6 6V7h2v4h4v2h-4v4h-2v-4H7v-2h4z" />
+              </svg>
+              Opret record
+            </button>
+            <button value="fortryd" class="btn btn-secondary-inverse">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path d="M8 7v4L2 6l6-5v4h5a8 8 0 1 1 0 16H4v-2h9a6 6 0 1 0 0-12H8z" />
+              </svg>
+              Fortryd
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer"></div>
+    </dialog>
+    <script>
+      let dialog = document.querySelector('dialog');
+      let open = document.querySelector('#open');
+      let close = document.querySelector('#close');
+
+      open.addEventListener('click', function () {
+        dialog.showModal();
+      });
+
+      close.addEventListener('click', function () {
+        dialog.close();
+      });
+    </script>
+  </body>
+</html>
