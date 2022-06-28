@@ -338,6 +338,14 @@ td a:hover > svg {
   transform: rotate(360deg);
 }
 
+td label {
+  display: flex;
+}
+
+.label-text h4 {
+  display: none;
+}
+
 /**************/
 /* ACCORDIONS */
 /**************/
@@ -577,6 +585,32 @@ footer p + p {
   }
 
   td:first-child svg {
+    display: block;
+  }
+
+  /* NEW TABLE */
+
+  td label {
+    margin-right: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .label-text h4 {
+    display: block;
+  }
+
+  input[name='box1']:checked ~ table tbody tr#id5 td:not(:first-child) {
+    display: block;
+  }
+  input[name='box2']:checked ~ table tbody tr#id6 td:not(:first-child) {
+    display: block;
+  }
+  input[name='box3']:checked ~ table tbody tr#id7 td:not(:first-child) {
+    display: block;
+  }
+  input[name='box4']:checked ~ table tbody tr#id8 td:not(:first-child) {
     display: block;
   }
 

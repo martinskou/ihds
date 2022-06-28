@@ -124,7 +124,7 @@
       </thead>
       <tbody>
         <tr id="id1">
-          <td>
+          <td onclick="handleOpenTable(id1)">
             <span>
               <h4>Domain:</h4>
               1x.dk
@@ -157,7 +157,7 @@
           </td>
         </tr>
         <tr id="id2">
-          <td>
+          <td onclick="handleOpenTable(id2)">
             <span>
               <h4>Domain:</h4>
               1x.dk
@@ -190,7 +190,7 @@
           </td>
         </tr>
         <tr id="id3">
-          <td>
+          <td onclick="handleOpenTable(id3)">
             <span>
               <h4>Domain:</h4>
               1x.dk
@@ -223,7 +223,7 @@
           </td>
         </tr>
         <tr id="id4">
-          <td>
+          <td onclick="handleOpenTable(id4)">
             <span>
               <h4>Domain:</h4>
               1x.dk
@@ -232,6 +232,176 @@
               <path fill="none" d="M0 0h24v24H0z" />
               <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z" />
             </svg>
+          </td>
+          <td>
+            <span>
+              <h4>Customer:</h4>
+            </span>
+            1x.dk
+          </td>
+          <td>
+            <span>
+              <h4>Current DNS:</h4>
+            </span>
+            primary.infoserv.dk
+          </td>
+          <td>
+            <span>
+              <h4>Webserver:</h4>
+            </span>
+            132.215.215.124
+          </td>
+          <td>
+            <span>
+              <h4>Infoserv DNS:</h4>
+            </span>
+            YES
+          </td>
+          <td>
+            <a href="">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path d="M5.334 4.545a9.99 9.99 0 0 1 3.542-2.048A3.993 3.993 0 0 0 12 3.999a3.993 3.993 0 0 0 3.124-1.502 9.99 9.99 0 0 1 3.542 2.048 3.993 3.993 0 0 0 .262 3.454 3.993 3.993 0 0 0 2.863 1.955 10.043 10.043 0 0 1 0 4.09c-1.16.178-2.23.86-2.863 1.955a3.993 3.993 0 0 0-.262 3.455 9.99 9.99 0 0 1-3.542 2.047A3.993 3.993 0 0 0 12 20a3.993 3.993 0 0 0-3.124 1.502 9.99 9.99 0 0 1-3.542-2.047 3.993 3.993 0 0 0-.262-3.455 3.993 3.993 0 0 0-2.863-1.954 10.043 10.043 0 0 1 0-4.091 3.993 3.993 0 0 0 2.863-1.955 3.993 3.993 0 0 0 .262-3.454zM13.5 14.597a3 3 0 1 0-3-5.196 3 3 0 0 0 3 5.196z" />
+              </svg>
+              Manage
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Domain</th>
+          <th>Customer</th>
+          <th>Current DNS</th>
+          <th>Webserver</th>
+          <th>Infoserv DNS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <input type="checkbox" name="box1" id="box1" hidden />
+        <input type="checkbox" name="box2" id="box2" hidden />
+        <input type="checkbox" name="box3" id="box3" hidden />
+        <input type="checkbox" name="box4" id="box4" hidden />
+        <tr id="id5">
+          <td>
+            <label for="box1">
+              <div class="label-text">
+                <h4>Domain:</h4>
+                <p>1x.dk</p>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z" />
+              </svg>
+            </label>
+          </td>
+          <td>
+            <span> <h4>Customer:</h4> </span>1x.dk
+          </td>
+          <td>
+            <span> <h4>Current DNS:</h4> </span>primary.infoserv.dk
+          </td>
+          <td>
+            <span> <h4>Webserver:</h4> </span>132.215.215.124
+          </td>
+          <td>
+            <span> <h4>Infoserv DNS:</h4> </span>YES
+          </td>
+          <td>
+            <a href="">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path d="M5.334 4.545a9.99 9.99 0 0 1 3.542-2.048A3.993 3.993 0 0 0 12 3.999a3.993 3.993 0 0 0 3.124-1.502 9.99 9.99 0 0 1 3.542 2.048 3.993 3.993 0 0 0 .262 3.454 3.993 3.993 0 0 0 2.863 1.955 10.043 10.043 0 0 1 0 4.09c-1.16.178-2.23.86-2.863 1.955a3.993 3.993 0 0 0-.262 3.455 9.99 9.99 0 0 1-3.542 2.047A3.993 3.993 0 0 0 12 20a3.993 3.993 0 0 0-3.124 1.502 9.99 9.99 0 0 1-3.542-2.047 3.993 3.993 0 0 0-.262-3.455 3.993 3.993 0 0 0-2.863-1.954 10.043 10.043 0 0 1 0-4.091 3.993 3.993 0 0 0 2.863-1.955 3.993 3.993 0 0 0 .262-3.454zM13.5 14.597a3 3 0 1 0-3-5.196 3 3 0 0 0 3 5.196z" />
+              </svg>
+              Manage
+            </a>
+          </td>
+        </tr>
+        <tr id="id6">
+          <td>
+            <label for="box2">
+              <div class="label-text">
+                <h4>Domain:</h4>
+                <p>1x.dk</p>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z" />
+              </svg>
+            </label>
+          </td>
+          <td>
+            <span> <h4>Customer:</h4> </span>1x.dk
+          </td>
+          <td>
+            <span> <h4>Current DNS:</h4> </span>primary.infoserv.dk
+          </td>
+          <td>
+            <span> <h4>Webserver:</h4> </span>132.215.215.124
+          </td>
+          <td>
+            <span> <h4>Infoserv DNS:</h4> </span>YES
+          </td>
+          <td>
+            <a href="">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path d="M5.334 4.545a9.99 9.99 0 0 1 3.542-2.048A3.993 3.993 0 0 0 12 3.999a3.993 3.993 0 0 0 3.124-1.502 9.99 9.99 0 0 1 3.542 2.048 3.993 3.993 0 0 0 .262 3.454 3.993 3.993 0 0 0 2.863 1.955 10.043 10.043 0 0 1 0 4.09c-1.16.178-2.23.86-2.863 1.955a3.993 3.993 0 0 0-.262 3.455 9.99 9.99 0 0 1-3.542 2.047A3.993 3.993 0 0 0 12 20a3.993 3.993 0 0 0-3.124 1.502 9.99 9.99 0 0 1-3.542-2.047 3.993 3.993 0 0 0-.262-3.455 3.993 3.993 0 0 0-2.863-1.954 10.043 10.043 0 0 1 0-4.091 3.993 3.993 0 0 0 2.863-1.955 3.993 3.993 0 0 0 .262-3.454zM13.5 14.597a3 3 0 1 0-3-5.196 3 3 0 0 0 3 5.196z" />
+              </svg>
+              Manage
+            </a>
+          </td>
+        </tr>
+        <tr id="id7">
+          <td>
+            <label for="box3">
+              <div class="label-text">
+                <h4>Domain:</h4>
+                <p>1x.dk</p>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z" />
+              </svg>
+            </label>
+          </td>
+          <td>
+            <span> <h4>Customer:</h4> </span>1x.dk
+          </td>
+          <td>
+            <span> <h4>Current DNS:</h4> </span>primary.infoserv.dk
+          </td>
+          <td>
+            <span> <h4>Webserver:</h4> </span>132.215.215.124
+          </td>
+          <td>
+            <span> <h4>Infoserv DNS:</h4> </span>YES
+          </td>
+          <td>
+            <a href="">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path d="M5.334 4.545a9.99 9.99 0 0 1 3.542-2.048A3.993 3.993 0 0 0 12 3.999a3.993 3.993 0 0 0 3.124-1.502 9.99 9.99 0 0 1 3.542 2.048 3.993 3.993 0 0 0 .262 3.454 3.993 3.993 0 0 0 2.863 1.955 10.043 10.043 0 0 1 0 4.09c-1.16.178-2.23.86-2.863 1.955a3.993 3.993 0 0 0-.262 3.455 9.99 9.99 0 0 1-3.542 2.047A3.993 3.993 0 0 0 12 20a3.993 3.993 0 0 0-3.124 1.502 9.99 9.99 0 0 1-3.542-2.047 3.993 3.993 0 0 0-.262-3.455 3.993 3.993 0 0 0-2.863-1.954 10.043 10.043 0 0 1 0-4.091 3.993 3.993 0 0 0 2.863-1.955 3.993 3.993 0 0 0 .262-3.454zM13.5 14.597a3 3 0 1 0-3-5.196 3 3 0 0 0 3 5.196z" />
+              </svg>
+              Manage
+            </a>
+          </td>
+        </tr>
+        <tr id="id8">
+          <td>
+            <label for="box4">
+              <div class="label-text">
+                <h4>Domain:</h4>
+                <p>1x.dk</p>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z" />
+              </svg>
+            </label>
           </td>
           <td>
             <span>
@@ -431,25 +601,25 @@
 
       // TABLES OPEN/CLOSE
 
-      // const handleOpenTable = (id) => {
-      //   const tableChild = document.getElementById(id.id).children;
+      function handleOpenTable(id) {
+        const tableChild = document.getElementById(id.id).children;
 
-      //   let firstTableChild, restTableChild;
-      //   [firstTableChild, ...restTableChild] = tableChild;
+        let firstTableChild, restTableChild;
+        [firstTableChild, ...restTableChild] = tableChild;
 
-      //   restTableChild.forEach((e) => {
-      //     const eDisplay = e.style;
-      //     if (eDisplay.display == '') {
-      //       eDisplay.display = 'block';
-      //     } else {
-      //       eDisplay.display = '';
-      //     }
-      //   });
-      //   tableChild[0].childNodes[3].classList.toggle('rotate');
-      // };
+        restTableChild.forEach((e) => {
+          const eDisplay = e.style;
+          if (eDisplay.display == '') {
+            eDisplay.display = 'block';
+          } else {
+            eDisplay.display = '';
+          }
+        });
+        tableChild[0].childNodes[3].classList.toggle('rotate');
+      }
 
-      // function clickFunc() {
-      //   console.log('helloworld');
+      // function clickFunc(id) {
+      //   console.log('helloworld ' + id);
       // }
 
       // function handleWindowSize(x) {
@@ -457,18 +627,17 @@
       //   let firstTr, restTr;
       //   [firstTr, ...restTr] = tr;
 
-      //   console.log(restTr);
       //   if (x.matches) {
       //     restTr.forEach((e) => {
-      //       e.addEventListener('click', clickFunc);
+      //       //   e.addEventListener('click', handleOpenTable);
+      //       e.addEventListener('click', clickFunc(e.id));
       //     });
-      //     // e.addEventListener('click', clickFunc);
       //     console.log('wtf');
       //   } else {
       //     restTr.forEach((e) => {
+      //       //   e.removeEventListener('click', handleOpenTable);
       //       e.removeEventListener('click', clickFunc);
       //     });
-      //     // e.removeEventListener('click', clickFunc);
 
       //     console.log('nowtf');
       //   }
